@@ -1,0 +1,16 @@
+{
+  "root": "apps/app2",
+  "sourceRoot": "apps/app2",
+  "projectType": "application",
+  "targets":{
+    "version": {
+      "dependsOn": ["^version"],
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "baseBranch": "master",
+        "preset": "atom",
+        "tagPrefix": "{projectName}@"
+      }
+    }
+  }
+}
